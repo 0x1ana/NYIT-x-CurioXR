@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring + SI - NYIT Tutoring with Curio XR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo"><img src="nyit-logo.png" alt="NYIT Logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="tutors.html">Information for Tutors</a></li>
+                    <li><a href="tutoring-si.html" class="active">Tutoring + SI</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="past-events.html" class="active">Past Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="tutoring-si">
+            <h1>Tutoring + Supplemental Instruction (SI)</h1>
+            <p>Explore how VR Tutoring and Supplemental Instruction with Curio XR is transforming the learning experience at NYIT.</p>
+
+            <!-- Dropdown 1 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>What is VR Tutoring?</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        VR Tutoring through Curio XR offers a cutting-edge approach to personalized learning. It immerses students in
+                        a distraction-free virtual environment designed to maximize engagement and retention. By combining VR technology
+                        with proven tutoring techniques, students can explore, practice, and understand concepts more effectively.
+                    </p>
+                    <ul>
+                        <li>3D interactive models for real-world simulation and problem-solving.</li>
+                        <li>Collaborative tools for group study and SI sessions in virtual classrooms.</li>
+                        <li>Focus-enhancing, distraction-free environments tailored to individual needs.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dropdown 2 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>What is Supplemental Instruction (SI)?</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Supplemental Instruction (SI) provides peer-led study sessions that focus on challenging courses and topics.
+                        With Curio XR, SI becomes even more impactful by leveraging VR to create an interactive and collaborative
+                        environment for students to work together.
+                    </p>
+                    <ul>
+                        <li>Real-time problem-solving with peers in a shared virtual space.</li>
+                        <li>Guided exploration of complex topics using 3D simulations.</li>
+                        <li>Interactive discussion boards and virtual whiteboards for brainstorming.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dropdown 3 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>Benefits of VR Tutoring and SI</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        By combining VR tutoring with Supplemental Instruction, students gain a more dynamic, hands-on learning experience.
+                        Here are some of the top benefits:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Enhanced Engagement:</strong> Interactive models and simulations keep students actively involved.
+                        </li>
+                        <li>
+                            <strong>Better Retention:</strong> Visual and kinesthetic learning methods improve memory and understanding.
+                        </li>
+                        <li>
+                            <strong>Inclusivity:</strong> Tailored VR environments ensure accessibility for all learners, including those
+                            with disabilities.
+                        </li>
+                        <li>
+                            <strong>Collaboration:</strong> Virtual classrooms enable seamless group study and peer-to-peer interactions.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dropdown 4 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>How to Join VR Tutoring or SI</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Whether you’re looking to attend a tutoring session or participate in an SI group, the process is simple:
+                    </p>
+                    <ol>
+                        <li>
+                            <strong>Sign Up:</strong> Visit the Learning Center or contact us via email to sign up for a VR Tutoring or SI session. To book a session, contact the NYIT Learning Center via email: learningcenterma@nyit.edu or visit us in person. Our office is located on the second floor of 26W & 61st St. Room number is 205.
+                        </li>
+                        <li>
+                            <strong>Prepare Your Equipment:</strong> Ensure you have access to a VR headset or visit our office on campus.
+                        </li>
+                        <li>
+                            <strong>Join the Session:</strong> Follow the instructions provided thorugh email after you book your appointment, to log into your VR session using the Curio XR platform.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NYIT Tutoring with Curio XR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dropdown functionality
+        document.querySelectorAll('.dropdown-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const dropdown = header.parentElement;
+                const content = dropdown.querySelector('.dropdown-content');
+                const icon = header.querySelector('.dropdown-icon');
+
+                // Toggle visibility
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

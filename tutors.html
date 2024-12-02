@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info for Tutors - NYIT Tutoring with Curio XR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo"><img src="nyit-logo.png" alt="NYIT Logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="tutors.html" class="active">Information for Tutors</a></li>
+                    <li><a href="tutoring-si.html">Tutoring + SI</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="past-events.html" class="active">Past Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="info-for-tutors">
+            <h1>Info for Tutors</h1>
+            <p>Discover how NYIT's innovative VR Ready Program empowers tutors and students to excel in a virtual reality environment.</p>
+
+            <!-- Dropdown 1 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>Understanding the VR Ready Program</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        The VR Ready Program is designed to prepare tutors for virtual reality-based tutoring sessions. By joining the
+                        program, tutors will develop advanced skills to leverage Curio XR’s cutting-edge technology effectively.
+                    </p>
+                    <p>
+                        This program focuses on:
+                    </p>
+                    <ul>
+                        <li>Mastering VR hand gestures and tool interactions.</li>
+                        <li>Utilizing 3D learning models for interactive teaching.</li>
+                        <li>Accommodating diverse learning styles and accessibility needs.</li>
+                    </ul>
+                    <p>
+                        Graduates of the VR Ready Program earn digital badges, showcasing their expertise and commitment to innovative
+                        teaching methods.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dropdown 2 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>How to Get VR Ready</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Becoming VR Ready involves completing two key steps:
+                    </p>
+                    <ol>
+                        <li>
+                            <strong>Book an Appointment:</strong> Schedule your VR Ready session by contacting the Learning Center. You’ll receive guidance on the required equipment and initial setup.
+                        </li>
+                        <li>
+                            <strong>Complete Curio XR Training:</strong> Engage in hands-on training that covers VR navigation, tools, and best practices. Tutors will complete interactive sessions to ensure mastery of Curio XR features.
+                        </li>
+                    </ol>
+                    <p>
+                        By completing this process, tutors will gain the skills needed to create engaging, distraction-free learning environments for their students.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dropdown 3 -->
+            <section class="feedback-section">
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h2>Feedback and Feature Request</h2>
+                        <div class="dropdown-icon">+</div>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Your feedback is invaluable in improving the Curio XR platform and enhancing the tutoring experience.
+                            Please use the form below to share your thoughts or request a new feature.
+                        </p>
+                        <div class="google-form-container">
+                            <iframe src="https://forms.gle/5utvGimoy5DyUkmK6" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">
+                                Loading…
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+               
+            <!-- Badge Showcase -->
+            <div class="badges-section">
+                <h2>Earn Digital Badges</h2>
+                <p>Showcase your VR tutoring skills with these exclusive badges:</p>
+                <div class="badges-container">
+                    <div class="badge">
+                        <img src="badge1.png" alt="Certified VR Tutor Badge">
+                        <p><strong>Certified VR Tutor</strong></p>
+                        <p>Awarded to tutors who complete the VR Ready Program and demonstrate proficiency in VR-based instruction.</p>
+                    </div>
+                    <div class="badge">
+                        <img src="badge2.png" alt="Accessibility Expert Badge">
+                        <p><strong>Accessibility Expert</strong></p>
+                        <p>Earned by tutors who master Curio XR’s accessibility features and ensure inclusivity for all learners.</p>
+                    </div>
+                    <div class="badge">
+                        <img src="badge3.png" alt="Innovation Champion Badge">
+                        <p><strong>Innovation Champion</strong></p>
+                        <p>Given to tutors who consistently provide feedback and contribute to enhancing the Curio XR platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NYIT Tutoring with Curio XR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dropdown functionality
+        document.querySelectorAll('.dropdown-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const dropdown = header.parentElement;
+                const content = dropdown.querySelector('.dropdown-content');
+                const icon = header.querySelector('.dropdown-icon');
+
+                // Toggle visibility
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Events - NYIT Tutoring with Curio XR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo"><img src="nyit-logo.png" alt="NYIT Logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="tutors.html">Information for Tutors</a></li>
+                    <li><a href="tutoring-si.html">Tutoring + SI</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="past-events.html" class="active">Past Events</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="past-events">
+            <h1>Past Events</h1>
+            <p>Explore highlights from our recent events showcasing the power of VR Tutoring and Curio XR.</p>
+
+            <!-- Event 1 -->
+            <div class="event">
+                <div class="event-content">
+                    <h2>VR Tutoring Launch Event</h2>
+                    <p>
+                        The <strong>VR Tutoring Launch Event</strong> marked the beginning of a new era in education at NYIT, introducing
+                        students and tutors to the transformative potential of virtual reality. Attendees explored immersive learning environments
+                        powered by CurioXR, experiencing firsthand how VR enhances engagement and retention in tutoring sessions.
+                    </p>
+                    <p><strong>Event Highlights:</strong></p>
+                    <ul>
+                        <li>Hands-on VR demonstrations showcasing CurioXR’s features.</li>
+                        <li>Interactive workshops for students and tutors to explore virtual tools.</li>
+                    </ul>
+                    <p>
+                        This groundbreaking event demonstrated the incredible possibilities of VR in education, leaving participants inspired and
+                        excited for the future of learning.
+                    </p>
+                </div>
+                <div class="event-slideshow">
+                    <div class="slideshow-container">
+                        <img src="vr-launch-1.jpeg" alt="VR Tutoring Launch Event Photo 1">
+                        <img src="vr-launch-2.jpeg" alt="VR Tutoring Launch Event Photo 2">
+                        <img src="vr-launch-3.jpeg" alt="VR Tutoring Launch Event Photo 3">
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Event 2 -->
+            <div class="event">
+                <div class="event-content">
+                    <h2>CurioXR Demonstration with PSG for Freshmen</h2>
+                    <p>
+                        The <strong>CurioXR Demonstration with PSG</strong> was a collaborative event aimed at introducing freshmen to the
+                        transformative possibilities of virtual reality in education. Hosted in partnership with the <strong>Peer to Success
+                        Group (PSG)</strong>, the event provided an engaging introduction to NYIT’s cutting-edge VR tutoring platform.
+                    </p>
+                    <p><strong>Event Highlights:</strong></p>
+                    <ul>
+                        <li>Freshmen explored CurioXR’s features, including interactive 3D models and immersive simulations.</li>
+                        <li>PSG leaders shared insights into how CurioXR supports student success and enhances learning outcomes.</li>
+                        <li>Participants engaged in hands-on VR experiences, discovering how virtual environments make studying more
+                            interactive and enjoyable.
+                        </li>
+                    </ul>
+                    <p>
+                        This event successfully equipped incoming students with the knowledge and tools to leverage VR technology, fostering
+                        excitement for their academic journey at NYIT.
+                    </p>
+                </div>
+                <div class="event-slideshow">
+                    <div class="slideshow-container">
+                        <img src="curioxr-psg-1.png" alt="CurioXR PSG Event Photo 1">
+                        <img src="curioxr-psg-2.png" alt="CurioXR PSG Event Photo 2">
+                        <img src="curioxr-psg-3.png" alt="CurioXR PSG Event Photo 3">
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Event 3 -->
+            <div class="event">
+                <div class="event-content">
+                    <h2>BioReality: Discover Biology Through CurioXR</h2>
+                    <p>
+                        <strong>BioReality: Discover Biology Through CurioXR</strong> was an immersive event that showcased the future of
+                        biology education through CurioXR. Students explored complex biological concepts in a highly interactive and engaging
+                        virtual reality environment. From virtual dissections to 3D neuron simulations, BioReality transformed traditional biology
+                        learning into a cutting-edge experience.
+                    </p>
+                    <p><strong>Highlights:</strong></p>
+                    <ul>
+                        <li>Students performed virtual dissections with precision tools.</li>
+                        <li>Participants explored the human body using detailed 3D models.</li>
+                        <li>Complex biological processes were explained through interactive VR simulations.</li>
+                    </ul>
+                    <p>
+                        This event empowered students to deepen their understanding of biology, making learning both accessible and unforgettable.
+                    </p>
+                </div>
+                <div class="event-slideshow">
+                    <div class="slideshow-container">
+                        <img src="bioreality-1.png" alt="BioReality Event 1">
+                        <img src="bioreality-2.png" alt="BioReality Event 2">
+                        <img src="bioreality-3.png" alt="BioReality Event 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NYIT Tutoring with Curio XR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Slideshow functionality
+        document.querySelectorAll('.slideshow-container').forEach(slideshow => {
+            let images = slideshow.querySelectorAll('img');
+            let currentIndex = 0;
+
+            setInterval(() => {
+                images[currentIndex].style.display = 'none';
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].style.display = 'block';
+            }, 3000); // Change image every 3 seconds
+        });
+    </script>
+</body>
+</html>

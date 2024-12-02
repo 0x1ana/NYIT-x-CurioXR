@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYIT Tutoring with Curio XR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo"><img src="nyit-logo.png" alt="NYIT Logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="tutors.html">Information for Tutors</a></li>
+                    <li><a href="tutoring-si.html">Tutoring + SI</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="past-events.html" class="active">Past Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+    <section class="hero">
+        <div class="video-container">
+            <video id="background-video" autoplay muted loop class="background-video">
+                <source src="./video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="audio-controls">
+                <button id="enableSound" class="audio-button">Enable Sound</button>
+                <button id="disableSound" class="audio-button hidden">Disable Sound</button>
+            </div>
+        </div>
+        <div class="hero-overlay">
+            <h1>NYIT Now Has Virtual Reality Tutoring</h1>
+            <p>Experience cutting-edge VR tutoring technology with Curio XR.</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <main>
+        <section class="introduction">
+            <h1>Welcome to the NYIT x Curio XR Collaboration</h1>
+            <p>NYIT is leveraging Curio XR’s immersive VR technology to transform the tutoring experience.</p>
+
+            <!-- Dropdown 1 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>Why Curio XR?</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <p>Curio XR is a cutting-edge platform that creates distraction-free, immersive learning environments tailored to student needs.</p>
+                    <ul>
+                        <li>Interactive 3D models for better concept visualization.</li>
+                        <li>Accessible for all learning styles and abilities.</li>
+                        <li>Continuous innovation backed by research.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dropdown 2 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>Features of Curio XR</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                    
+                    
+                        <div class="resources-container">
+                            <div class="resources-column">
+                                <ul>
+                                    <li>2D Drawing </li>
+                                    <li>3D Drawing </li>
+                                    <li>Color Selection </li>
+                                    <li>Interactive Whiteboard </li>
+                                    <li>Eraser </li>
+                                    <li>3D Geometric Objects </li>
+                                    <li>Space Objects from NASA </li>
+                                    <li>Misc. Objects </li>
+                                    <li>Speaker Icon and Names </li>
+                                    <li>Study Buddy</li>
+                                    <li>Tape Measure</li>
+                                    <li>Board Customization </li>
+                                    <li>Teleporter</li>
+                                    <li>Brightness</li>
+                                </ul>
+                            </div>
+                            <div class="resources-column">
+                                <ul>
+                                    <li>3D Environments </li>
+                                    <li>4-Function Calculator </li>
+                                    <li>Scientific Calculator</li>
+                                    <li>Stopwatch </li>
+                                    <li>Timer </li>
+                                    <li>Alarm </li>
+                                    <li>PDF Upload & Markup </li>
+                                    <li>3D Celebrations </li>
+                                    <li>2D YouTube Video Search </li>
+                                    <li>Augmented Reality</li>
+                                    <li>Tic Tac Toe</li>
+                                    <li>School Admin</li>
+                                    <li>Solar System</li>
+                                    <li>3D VSEPR Shapes</li>
+                                </ul>
+                            </div>
+                            <div class="resources-column">
+                                <ul>
+                                    <li>2D Video Library</li>
+                                    <li>360 Video Library </li>
+                                    <li>360 YouTube Video Search</li>
+                                    <li>Preloaded 3D Molecules </li>
+                                    <li>Molecule Builder </li>
+                                    <li>Interactive Human Body / Anatomy Model </li>
+                                    <li>Line Tool </li>
+                                    <li>Textbox</li>
+                                    <li>Uploading Images</li>
+                                    <li>Uploading Objects</li>
+                                    <li>Alarm</li>
+                                    <li>Height Change</li>
+                                    <li>Name, Speaker Icon, & Mic Muting</li>
+                                    <li>Room Clearing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dropdown 3 -->
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h2>Transforming Tutoring at NYIT</h2>
+                    <div class="dropdown-icon">+</div>
+                </div>
+                <div class="dropdown-content">
+                    <p>With Curio XR, NYIT is redefining how students engage with their tutors and course materials:</p>
+                    <ul>
+                        <li>Dynamic, hands-on experiences that enhance understanding and retention.</li>
+                        <li>Accessible virtual reality experiences for all students.</li>
+                        <li>Integration with NYIT’s mission to embrace innovative learning techniques.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NYIT Tutoring with Curio XR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Video sound toggle functionality
+        const video = document.getElementById('background-video');
+        const enableSoundButton = document.getElementById('enableSound');
+        const disableSoundButton = document.getElementById('disableSound');
+
+        enableSoundButton.addEventListener('click', () => {
+            video.muted = false;
+            enableSoundButton.classList.add('hidden');
+            disableSoundButton.classList.remove('hidden');
+        });
+
+        disableSoundButton.addEventListener('click', () => {
+            video.muted = true;
+            disableSoundButton.classList.add('hidden');
+            enableSoundButton.classList.remove('hidden');
+        });
+
+        // Dropdown functionality
+        document.querySelectorAll('.dropdown-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const dropdown = header.parentElement;
+                const content = dropdown.querySelector('.dropdown-content');
+                const icon = header.querySelector('.dropdown-icon');
+
+                // Toggle visibility
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
